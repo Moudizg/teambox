@@ -11,7 +11,7 @@ group :rails do
 end
 
 #Temporary hack - Fix once this ticket: is resolved
-gem 'activesupport-i18n-patch', :git => 'git://github.com/teambox/activesupport-i18n-patch.git'
+gem 'activesupport-i18n-patch', :git => 'git://github.com/redbooth/teambox/activesupport-i18n-patch.git'
 
 gem 'nokogiri'
 gem 'SystemTimer', '~> 1.2.0', :require => 'system_timer'
@@ -30,11 +30,11 @@ gem 'json'
 gem 'oa-oauth', '= 0.2.3', :require => 'omniauth/oauth'
 gem 'hashie'
 gem 'tilt', '~> 1.2.2'
-gem 'choices', :git => "git://github.com/teambox/choices.git"
+gem 'choices', :git => "git://github.com/redbooth/teambox/choices.git"
 gem 'rack-staticifier', :git => "https://github.com/remi/rack-staticifier.git"
 gem 'trimmer', :git => "https://github.com/teambox/trimmer.git"
 
-gem "will_paginate", :git=>"git://github.com/teambox/will_paginate.git"
+gem "will_paginate", :git=>"git://github.com/redbooth/teambox/will_paginate.git"
 gem 'thinking-sphinx', '2.0.1', :require => 'thinking_sphinx'
 gem 'sprockets-rails', '~> 0.0.1'
 gem 'vestal_versions', '~> 1.2.2', :git => 'git://github.com/adamcooper/vestal_versions'
