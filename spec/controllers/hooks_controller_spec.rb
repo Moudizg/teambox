@@ -379,7 +379,7 @@ describe HooksController do
             "after": "de8251ff97ee194a289832576287d6f8ad74e3d0",
             "ref": "refs/heads/master",
             "pusher": {"email":"frank@teambox.com","name":"frank"},
-            "compare": "https://github.com/teambox/teambox/compare/41a212e^...hju8251",
+            "compare": "https://github.com/redbooth/teambox/teambox/compare/41a212e^...hju8251",
             "repository": {
               "url": "http://github.com/defunkt/github",
               "name": "github",
@@ -450,7 +450,7 @@ describe HooksController do
         conversation.should be_simple
         conversation.name.should eql "New code on master branch"
         expected = (<<-HTML).strip
-Posted on Github: <a href=\"http://github.com/defunkt/github/tree/master\">github/refs/heads/master</a> <a href=\"https://github.com/teambox/teambox/compare/41a212e^...hju8251\">(compare)</a>
+Posted on Github: <a href=\"http://github.com/defunkt/github/tree/master\">github/refs/heads/master</a> <a href=\"https://github.com/redbooth/teambox/teambox/compare/41a212e^...hju8251\">(compare)</a>
 
 Chris Wanstrath - <a href=\"http://github.com/defunkt/github/commit/hj6251i97ee19tyr28ig676F76287d6f8ag5r5Y5\">Forgot task id so it should appear under new conversation in old style</a>
 
@@ -519,7 +519,7 @@ Posted on Github: <a href=\"http://github.com/defunkt/github/tree/master\">githu
         second_comment.target.should == @other_task
 
         expected_first = (<<-HTML).strip
-         Posted on Github: <a href=\"http://github.com/defunkt/github/tree/master\">github/refs/heads/master</a> <a href=\"https://github.com/teambox/teambox/compare/41a212e^...hju8251\">(compare)</a>
+         Posted on Github: <a href=\"http://github.com/defunkt/github/tree/master\">github/refs/heads/master</a> <a href=\"https://github.com/redbooth/teambox/teambox/compare/41a212e^...hju8251\">(compare)</a>
 
 Chris Wanstrath - <a href=\"http://github.com/defunkt/github/commit/41a212ee83ca127e3c8cf465891ab7216a705f59\">Check this file, task</a>\n
 Mislav Marohnić - <a href=\"http://github.com/defunkt/github/commit/de8251ff97ee194a289832576287d6f8ad74e3d0\">Closing for task</a>
@@ -528,7 +528,7 @@ Mislav Marohnić - <a href=\"http://github.com/defunkt/github/commit/de8251ff97e
         first_comment.body.strip.should == expected_first.strip
 
         expected_second = (<<-HTML).strip
-         Posted on Github: <a href=\"http://github.com/defunkt/github/tree/master\">github/refs/heads/master</a> <a href=\"https://github.com/teambox/teambox/compare/41a212e^...hju8251\">(compare)</a>
+         Posted on Github: <a href=\"http://github.com/defunkt/github/tree/master\">github/refs/heads/master</a> <a href=\"https://github.com/redbooth/teambox/teambox/compare/41a212e^...hju8251\">(compare)</a>
 
 Mislav Marohnić - <a href=\"http://github.com/defunkt/github/commit/hju8251ff97ee194a289832576287d6f89ui7978h\">Commit for different task</a>
         HTML
