@@ -7,20 +7,20 @@ GIT
       activesupport (>= 3.0.0)
 
 GIT
-  remote: git://github.com/teambox/activesupport-i18n-patch.git
+  remote: git://github.com/redbooth/teambox/activesupport-i18n-patch.git
   revision: 2e835783c0ea7062ad280b71b04060bd9b89e1a4
   specs:
     activesupport-i18n-patch (0.0.1)
 
 GIT
-  remote: git://github.com/teambox/choices.git
+  remote: git://github.com/redbooth/teambox/choices.git
   revision: 93d0cfb4e5fd4ae03b421b379a69ee00721f337b
   specs:
     choices (0.2.4)
       hashie (>= 0.4.0)
 
 GIT
-  remote: git://github.com/teambox/will_paginate.git
+  remote: git://github.com/redbooth/teambox/will_paginate.git
   revision: e69b364e79ce1fd24e3a10fcc87604969902f0a9
   specs:
     will_paginate (3.0.pre3)
@@ -32,7 +32,7 @@ GIT
     rack-staticifier (0.1.6)
 
 GIT
-  remote: https://github.com/teambox/trimmer.git
+  remote: https://github.com/redbooth/teambox/trimmer.git
   revision: 22a43334e7ea5483e1673e35c464bb787a9a5b77
   specs:
     trimmer (0.0.1)
