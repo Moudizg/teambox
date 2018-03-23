@@ -7,12 +7,6 @@ GIT
       activesupport (>= 3.0.0)
 
 GIT
-  remote: git://github.com/redbooth/teambox/activesupport-i18n-patch.git
-  revision: 2e835783c0ea7062ad280b71b04060bd9b89e1a4
-  specs:
-    activesupport-i18n-patch (0.0.1)
-
-GIT
   remote: git://github.com/redbooth/teambox/choices.git
   revision: 93d0cfb4e5fd4ae03b421b379a69ee00721f337b
   specs:
